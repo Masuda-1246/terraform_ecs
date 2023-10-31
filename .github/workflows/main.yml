@@ -49,7 +49,6 @@ jobs:
           CODECOMMIT_REPO_URL: ${{ secrets.CODECOMMIT_REPO_URL }}
           CODECOMMIT_SSH_CONFIG: ${{ secrets.CODECOMMIT_SSH_CONFIG }}
           CODECOMMIT_SSH_PRIVATE_KEY: ${{ secrets.CODECOMMIT_SSH_PRIVATE_KEY }}
-          BRANCH_NAME: ${{ steps.extract_branch.outputs.branch }}
         shell: bash
         run: |
           mkdir ~/.ssh
